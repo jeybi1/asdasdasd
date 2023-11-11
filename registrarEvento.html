@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registro de Pacientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(to right, #e9e3e3, #25e3aa)
+    }
+    .btn a{
+        color: azure;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <div class="botonera">
+                    <button class="btn btn-info">
+                        <a href="index.html"> Volver</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- ... (tu código del menú aquí) -->
+            </div>
+            <div class="col-md-9 content">
+                <h1>Registro de Pacientes</h1>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="nombre">Nombre del Encargado</label>
+                            <input type="text" class="form-control" id="nombreEnc" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="apellidoPaterno">Nombre del evento</label>
+                            <input type="text" class="form-control" id="nombreEve" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="apellidoMaterno">Descripcion</label>
+                            <input type="text" class="form-control" id="desc" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="telefono">Añadir doc</label>
+                            <input type="tel" class="form-control" id="doc" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" class="form-control" id="fecha" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Registrar</button>
+                </form>
+
+                <!-- Tabla de Pacientes Registrados -->
+                <div class="tabla-pacientes mt-4">
+                    <h2>Pacientes Registrados</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nombre del Encargado</th>
+                                <th>Nombre del Evento </th>
+                                <th>Descricpcion</th>
+                                <th>Documento</th>
+                                <th>Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Las filas de la tabla se llenarán con datos mediante JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/eventos.js"></script>
+</body>
+</html>
